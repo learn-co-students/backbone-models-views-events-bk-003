@@ -7,5 +7,6 @@ describe( "#boostrap", function() {
     $("#name").val("blake")
     $("#mySubmit").click()
     expect(app.formView.model.get("name")).toEqual("blake")
+    expect($("body")).toContainHtml('<h1>User Data Updated!</h1><h2>Users Name is blake</h2>')
   });    
 });

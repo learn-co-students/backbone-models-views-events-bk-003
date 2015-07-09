@@ -6,6 +6,7 @@ javascripts:
     - lib/backbone.js
     - models/user.js
     - views/main.js
+    - views/userData.js
     - app.js
   specs:
     - lib/jasmine-jquery.js
