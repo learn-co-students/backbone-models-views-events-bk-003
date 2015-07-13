@@ -1,0 +1,9 @@
+languages:
+  - javascript
+tags:
+  - backbone
+  - jquery
+  - views
+  - models
+  - events
+resources: 1
