@@ -1,7 +1,12 @@
 var app = {};
 function bootstrap() {
-  // instantiate your view object and append it's HTML to the DOM.
-  // instantiate your model object
-  // pass the model object to the view when you instantiate it
-  attach your view object to the global app object so we have access to it anywhere. 
+  // instantiate a new instance of User here
+  // make an object where the property name is model and the value is the user instance here
+
+  // make a new instance of your first view and pass the object as a parameter
+  // attach your this view object to app so we have access to it anywhere (call it formView)
+  // append the HTML from your newly attached view object to the DOM
+
+  //  make a new instance of your second view and pass the object as a parameter as well
+  // attach your this view object to app so we have access to it anywhere (call it userData)
 }
