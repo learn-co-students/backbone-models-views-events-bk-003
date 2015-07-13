@@ -1,3 +1,2 @@
-User = Backbone.Model.extend({
-  // create your model properties here (you might not need anything)
-})
+// create your user model here
+// it should extend (inherit) from the main Backbone model object
