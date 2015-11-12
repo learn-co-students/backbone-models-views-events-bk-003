@@ -6,12 +6,6 @@ MyView = Backbone.View.extend({
   initialize: function() {
     // call on the render function here
 
-    // you'll want to call the listenTo function on your instance of the class here
-    // listenTo takes three arguments:
-    //   1. the property name that points to the model you want to listen to
-    //   2. the thing you want to listen for (in this case, you're listening for changes, so "change")
-    //   3. the function the view should call when the model changes
-
   },
   render: function() {
     // the html you'll be working with is 
