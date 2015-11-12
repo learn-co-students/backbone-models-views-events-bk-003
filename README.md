@@ -3,7 +3,9 @@
 ## Overview
 * About
 * Instructions
-* Events module
+* Events
+	* Events Module
+	* Listen To
 * Data Binding
 * Resources
 
@@ -29,7 +31,13 @@ Data binding simply means an automatic syncing between the model and the view. D
 
 In Backbone, you can set up two way data binding easily, but most commonly you'll wire up one way data binding, where one or more views listen to changes on a model or a collection and refresh themselves when that model changes.
 
-###listenTo and Events
+## Events
+Until now when we have been talking about events we have mainly been talking about browser events like `click`, `mouseenter`, and `hover` however now that we are deeper in we have to talk about the other type of events we can use. Backbone has its own events that act on the model that are contained in the [Backbone Events Module](http://backbonejs.org/#Events). We also have custom events that can be triggered whenever any event listener is called. 
+
+### Events Module
+Backbone.js has a module called events that can be mixed into any model giving it the ability to react to and trigger custom events. This is similar to jQuery handling events which we can manually trigger or which will be triggered automatically when certain things happen. The most common event you'll listen for is a change to a model. You also might listen to the add event in a collection. Everytime a model is changed, Backbone will automatically fire that event (similar to Backbone doing that when an element is clicked on in the browser as we saw in the earlier lab) and anything that's listening to that event will call the function listed as the third argument to the `listenTo` call.
+
+###listenTo
 Since we are setting up a one way data binding in this lab we will need to have a view listen to the model. Views can listen to models by using Backbone's events module and the `#listenTo` function. `#listenTo` takes three arguments a model, an event, and a callback function. 
 
 ```javascript
@@ -44,8 +52,7 @@ MyView = Backbone.View.extend({
 })
 ```
 
-Similar to jQuery handling events, we now have Backbones events which we can manually trigger or which will be triggered automatically when certain things happen. The most common event you'll listen for is a change to a model. You also might listen to the add event in a collection. Everytime a model is changed, Backbone will automatically fire that event (similar to Backbone doing that when an element is clicked on in the browser as we saw in the earlier lab) and anything that's listening to that event will call the function listed as the third argument to the `listenTo` call.
-
 
 ## Resources
 * [Wikipedia - Data Binding](https://en.wikipedia.org/wiki/Data_binding)
+* [Backbone Events Module](http://backbonejs.org/#Events)
