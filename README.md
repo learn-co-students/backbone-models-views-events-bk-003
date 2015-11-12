@@ -25,7 +25,7 @@ This lab is similar to the last two labs we have done except in this lab we're g
 6. Finally append our form view to the body of the HTML page. 
 
 ## Data Binding
-This lab contains our first instance of Data Binding in Backbone.js. You'll often hear data binding talked about as one of the must-have features of any new Javascript MVC framework. So what exactly *is* data binding?
+In this lab we tackle the concept of data binding for the first time. You'll often hear data binding talked about as one of the must-have features of any new Javascript MVC framework. So what exactly *is* data binding?
 
 Data binding simply means an automatic syncing between the model and the view. Data binding usually uses the observer pattern (when one object registers interest in updates with another object who broadcasts changes). One way data binding is when the view listens to the model and refreshes itself any time the model's data changes. Two way data binding (seen in Angular and Ember, two other popular front-end frameworks) is when the view listens to the model __and__ the model listens to the view.  Essentially you have the model and the view constantly syncing with each other.
 
