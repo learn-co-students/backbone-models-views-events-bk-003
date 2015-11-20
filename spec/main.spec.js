@@ -1,4 +1,4 @@
-'use strict';
+  'use strict';
 
 describe( "#boostrap", function() {
   it("should instantiate your view and return the view object", function() {
