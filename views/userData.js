@@ -10,8 +10,6 @@ UserDataView = Backbone.View.extend({
   render : function() {
     var name = this.model.get('name')
     //the html you'll want to use looks something like this:
-    // var html = '<h1>User Data Updated!</h1><h2>Users Name is ' + this.model.get('name') + '</h2>'
-    // this.$el.append(html)
     this.$el.append('<h1>User Data Updated!</h1><h2>Users Name is ' + name +'</h2>');
     //remember to return the instance of the class here
     return this
